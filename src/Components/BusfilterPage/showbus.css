@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Noto+Sans:wght@100;300;400;500;600;700&display=swap');
 
-
 .bus-main-cont{
     width: 100%;
     height: 100%;
@@ -11,8 +10,8 @@
     flex-direction: column;
     margin: 80px 0 10rem 0;
     /* background: url(../../assets/modern-bus.png); */
-    background: url(../../assets/bus.png);
-    background-size:cover;
+    /* background: url(../../assets/bus.png); */
+    /* background-size:cover; */
     /* background-position: center; */
     /* background-repeat: no-repeat; */
 }

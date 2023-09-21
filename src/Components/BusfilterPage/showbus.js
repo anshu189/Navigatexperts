@@ -2,10 +2,22 @@ import './showbus.css';
 import React from 'react';
 import {Link} from "react-router-dom";
 import { FaBusAlt } from "react-icons/fa";
-// import bus from '../../assets/bus.png';
-// import Busfilter from '../Search/busfilter';
 
 const Showbus = () => {
+
+    const gotoid1=()=>{
+        console.log("BUS ID1");
+    }
+
+    const gotoid2=()=>{
+        console.log("BUS ID2");
+    }
+
+    const gotoid3=()=>{
+        console.log("BUS ID3");
+    }
+
+
   return (
     <div className="bus-main-cont">
         <div className="bus-sub-cont">
@@ -36,7 +48,7 @@ const Showbus = () => {
 
                 <div className='bus-right-item'>
                     <Link to='/track'>
-                        <button className="bus-track">Track</button>
+                        <button className="bus-track" onClick={gotoid1}>Track</button>
                     </Link>
                 </div>
 
@@ -51,9 +63,9 @@ const Showbus = () => {
                         <div className="depart">23:15</div>
                     </div>
                     <div className="bus-route">
-                       <div className="source">Ludhiana</div>
+                       <div className="source">Ambala</div>
                        <hr className='bus-hr'/>
-                       <div className="dest">Delhi</div> 
+                       <div className="dest">Manali</div> 
                     </div>
                 </div>
 
@@ -66,7 +78,7 @@ const Showbus = () => {
 
                 <div className='bus-right-item'>
                     <Link to='/track'>
-                        <button className="bus-track">Track</button>
+                        <button className="bus-track" onClick={gotoid2}>Track</button>
                     </Link>
                 </div>
 
@@ -81,9 +93,9 @@ const Showbus = () => {
                         <div className="depart">14:20</div>
                     </div>
                     <div className="bus-route">
-                       <div className="source">Karnal</div>
+                       <div className="source">Ambala</div>
                        <hr className='bus-hr'/>
-                       <div className="dest">Panipat</div> 
+                       <div className="dest">Manali</div> 
                     </div>
                 </div>
 
@@ -96,7 +108,7 @@ const Showbus = () => {
 
                 <div className='bus-right-item'>
                     <Link to='/track'>
-                        <button className="bus-track">Track</button>
+                        <button className="bus-track" onClick={gotoid3}>Track</button>
                     </Link>
                 </div>
 

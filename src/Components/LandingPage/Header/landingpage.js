@@ -1,20 +1,18 @@
 import React from 'react'
 import './landingpage.css';
 import {useState} from 'react';
-import Showbus from '../../BusfilterPage/showbusstyle2';
 import {Link} from "react-router-dom";
 import { FaBusAlt } from "react-icons/fa";
 import data from '../../Search/busstops.json';
 import Bodycontent from '../Body/bodycontent';
 import { IoLocationSharp,IoHome } from "react-icons/io5";
-// import bus from '../../../assets/bus.png';
 
-
-function LandingPage(){
-    
-    //Toggle Logic 
+const LandingPage=()=>{
+      
+    //Toggle Logic
     const [activeIndex, setActiveIndex] = useState(0);
 
+    
     const handleToggleClick = (index) => {
         setActiveIndex(index);
         if(index===0){
@@ -26,6 +24,7 @@ function LandingPage(){
     
     const [source, setSource] = useState("");
     const [destination, setDestination] = useState("");
+    const [showShowbus, setShowShowbus] = useState(false);
 
     const sourceonChange = (event) => {
         setSource(event.target.value);
@@ -45,6 +44,7 @@ function LandingPage(){
         // send to backend to - DB
         console.log("source:", source);
         console.log("destination:", destination);
+        setShowShowbus(!showShowbus);
     };
 
   return (<>
@@ -147,7 +147,6 @@ function LandingPage(){
                 <div className="fields Search-btn">
                 <Link to="/buses">
                     <button className="Search" onClick={() => onGo(source,destination)}>Search</button>
-                    <Showbus source={source} destination={destination} />
                 </Link>
                 </div>
             </div>

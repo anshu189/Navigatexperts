@@ -2,8 +2,7 @@ import './App.css';
 import { BsGithub } from "react-icons/bs";
 import Gmaps from './Components/Maps/gmaps';
 import { BsArrowUpCircle } from "react-icons/bs";
-// import Showbus from './Components/BusfilterPage/showbus';
-import Showbus from './Components/BusfilterPage/showbusstyle2';
+import Showbus from './Components/BusfilterPage/showbus';
 import LandingPage from './Components/LandingPage/Header/landingpage';
 import {BrowserRouter as Router,Routes, Route} from "react-router-dom";
 
@@ -30,8 +29,8 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<LandingPage/>}></Route>  
-          <Route exact path="/buses" element={<Showbus/>}/>
-          <Route exact path="/track" element={<Gmaps/>}/>
+          <Route exact path="/buses" element={<Showbus/>}/><Route/>
+          <Route exact path="/track" element={<Gmaps/>}/><Route/>
         </Routes>
       </Router>
 

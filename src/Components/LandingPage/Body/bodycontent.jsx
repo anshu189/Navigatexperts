@@ -10,9 +10,7 @@ const Bodycontent = () => {
       <div className="body-sub-cont">
         
         <div className="body-heading">
-          {/* <div className="small-bus-img">
-            <img src="../../../../assets/bus.png" alt="" />
-          </div> */}
+        
           <h1 className='body-header'>What we offer?</h1>
         </div>
         <div className="features-cont">
