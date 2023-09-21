@@ -18,7 +18,7 @@ function App() {
         <a href="http://localhost:3000">
           <h1>Navigate<span>Xperts</span></h1>
         </a>
-        <a href='https://github.com/anshu189/navigatexperts' rel='noreferrer' target='_blank' className='github-icon-a'>
+        <a href='https://github.com/anshu189/Navigatexperts' rel='noreferrer' target='_blank' className='github-icon-a'>
           <BsGithub className='navbar-icon' />
         </a>
       </div>
